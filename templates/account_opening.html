@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Laxmi Bank</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background: url(/static/Form_image/Orange\ Professional\ Gradients\ Online\ Banking\ Finance\ LinkedIn\ Single\ Image\ Ad.png);">
+  
+<div class="container mt-3  mb-3"style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50); " >
+
+  <!--************************************************Navbar**************************************** -->
+
+  
+  <a class="navbar-brand" href="home.html" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <img src="/static/images/Navy and White Modern Digital Wallet Easypay Logo.png" alt="Logo" style="width:150px;">
+  </a> 
+
+<nav class="navbar navbar-expand-sm mt-2" style="background: rgb(11, 11, 69);box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+<div class="container">
+<a class="navbar-brand text-white" href="javascript:void(0)">Laxmi Bank</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" style="background-color: azure;">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="mynavbar">
+  <ul class="navbar-nav me-auto">
+    <li class="nav-item">
+      <a class="nav-link active text-white" href="javascript:void(0)">Laxmi Unipay</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active text-white" href="javascript:void(0)">Laxmi Loans</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active text-white" href="javascript:void(0)">FAQ</a>
+    </li>
+    <li class="nav-item dropdown ">
+        <a class="nav-link text-white dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">Services</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Personal Internet Banking</a></li>
+          <li><a class="dropdown-item" href="#">Corporate internet Banking</a></li>
+          <li><a class="dropdown-item" href="#">Laxmi Payments</a></li>
+        </ul>
+      </li>
+  </ul>
+  <form class="d-flex text-white">
+     <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Be a part of Laxmi Bank</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Saving Bank Account</a></li>
+          <li><a class="dropdown-item" href="#">Current Account</a></li>
+          <li><a class="dropdown-item" href="#">Banking Forms</a></li>
+        </ul>
+    </div>
+  </form>
+</div>
+</div>
+</nav>
+
+<!--************************************************Navbar End**************************************** -->
+
+  <div class="row">
+  <div class="col-sm-6 p-3" style="font-family: 'Open Sans', sans-serif; font-size: 14px;  ">
+  <form action="{{url_for('insert')}}" method="POST">
+    
+    <div class="row mb-2">
+      
+      <label for="inputName" class="col-sm-4 col-form-label">Name</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="inputName" name="name" required>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <label for="inputName" class="col-sm-4 col-form-label">Father Name</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="inputName" name="f_name" required>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <label for="inputName" class="col-sm-4 col-form-label">Mother Name</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="inputName" name="m_name" required>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <label for="inputDate" class="col-sm-4 col-form-label">Date of Birth</label>
+      <div class="col-sm-7">
+        <input type="date" class="form-control" id="inputDate" name="dob" required>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <label for="inputNumber" class="col-sm-4 col-form-label">Aadhar Number</label>
+      <div class="col-sm-7">
+        <input type="number" class="form-control" id="inputNumber" name="aadhar" required>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <label for="inputPan" class="col-sm-4 col-form-label">Pan Number</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="inputPan" name="pan" required>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <label for="inputEmail3" class="col-sm-4 col-form-label">Email</label>
+      <div class="col-sm-7">
+        <input type="email" class="form-control" id="inputEmail3" name="email" required>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <label for="inputNumber" class="col-sm-4 col-form-label">Phone Number</label>
+      <div class="col-sm-7">
+        <input type="number" class="form-control" id="inputNumber" name="phone" required>
+      </div>
+    </div>
+    
+    <div class="row mb-2">
+      <label for="sel1" class="col-sm-4 col-form-label">Type of Account</label>
+      <div class="col-sm-7">
+        <select class="form-select" id="sel1" name="type_ac">
+          <option>-- choose --</option>
+          <option>Saving Account</option>
+          <option>Current Account</option>
+        </select>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <label for="inputName" class="col-sm-4 col-form-label">Nominee Name</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="inputName" name="nominee" required>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <label for="inputName" class="col-sm-4 col-form-label">Occupation</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="inputName" name="occupation" required>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <label for="inputName" class="col-sm-4 col-form-label">Address</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="inputName" name="address" required>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <label for="inputFile" class="col-sm-4 col-form-label">Upload Photo</label>
+      <div class="col-sm-7">
+        <input type="file" class="form-control" id="inputFile" name="photo_upload" required>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <label for="inputSign" class="col-sm-4 col-form-label">Upload Sign</label>
+      <div class="col-sm-7">
+        <input type="file" class="form-control" id="inputSign" name="sign_upload" required>
+      </div>
+    </div>
+
+    <div class="container" style="display: flex; justify-content: center;" >
+      <button type="submit" class="btn btn-warning m-2 text-white"><strong>I Agree</strong></button>
+      <button type="submit" class="btn btn-warning m-2 text-white"><strong>I Disagree</strong></button>
+      <button href ="{{url_for('insert')}}"type="submit" class="btn btn-warning m-2 text-white"><strong>Submit</strong> </button>
+      </div>
+
+  </form>
+</div>
+
+<div class="col-sm-6 p-3">
+
+  <div class="container ">
+    <video controls autoplay loop width="100%" height="auto" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.30); ">
+      <source src="/static/Video/time_-_13757 (540p).mp4" type="video/mp4">  
+    </video>
+    <img class="img-fluid mb-2" src="/static/Form_image/pexels-rdne-stock-project-7821726.jpg" alt="New York" width="1100" height="500" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.30); "> 
+    
+  </div>
+
+</div>
+
+<p>Dear Customer,</p>
+<p>After onboarding on Laxmi Online, the created user ID will be enabled for login through Laxmi.</p>
+<p style="color: red;">By clicking on 'I Agree' you hereby give consent for the same. Please do not share your login credentials with anyone.</p>
+
+
+
+
+
+<!--************************************************Footer**************************************** -->
+
+<footer class="page-footer font-small bg-dark text-white">
+  <div class="footer-copyright py-3">@Laxmi Bank:
+    <a href="index2.html"> Laxmi Bank</a>
+  </div>
+ 
+</footer>
+
+<!--************************************************Navbar End**************************************** -->
+</div>
+</div>
+
+</body>
+</html>
